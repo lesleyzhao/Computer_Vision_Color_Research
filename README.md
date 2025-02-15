@@ -1,7 +1,9 @@
-# Computer Vision Color Research on Luxury Car Brands
+# Computer Vision Color Research
 
 ## 📌 Project Overview
-This project focuses on separating an image's foreground and background in **Python** and computing the corresponding **color values (Hue, Saturation, Value - HSV)** for both. By leveraging **OpenCV** and **image processing techniques**, the project aims to analyze and quantify image colorfulness.
+
+This project focuses on separating an image's foreground and background in **Python** and **computing the corresponding color values (Hue, Saturation, Value - HSV)** for both. By leveraging **OpenCV and image processing techniques**, the project aims to analyze and quantify image colorfulness. This work was conducted under the guidance of Professor Jeffrey Lee as part of a research study on luxury product color-pricing analysis.
+
 
 ## 🚀 Features
 - **Foreground and Background Segmentation** – Extract distinct layers from images.
