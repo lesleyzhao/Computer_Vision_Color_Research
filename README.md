@@ -10,27 +10,6 @@ This project focuses on separating an image's foreground and background in **Pyt
 - **Batch Image Processing** – Analyze large datasets efficiently.
 - **Visualization Tools** – Generate masked and segmented images.
 
-## 📂 Directory Structure
-```
-📦 Computer_Vision_Color_Research
- ┣ 📂 data             # Image dataset used for analysis
- ┣ 📂 notebooks        # Jupyter/Colab notebooks for processing and visualization
- ┣ 📂 scripts          # Python scripts for batch processing
- ┣ 📜 ColorSeparating.ipynb  # Main notebook for foreground-background separation
- ┣ 📜 README.md        # Project documentation (this file)
-```
-
-## 🛠️ Installation & Setup
-To run this project, ensure you have the following dependencies installed:
-```sh
-pip install numpy matplotlib opencv-python imutils pandas
-```
-
-If using Google Colab, mount Google Drive to access stored images:
-```python
-from google.colab import drive
-drive.mount('/content/gdrive')
-```
 
 ## 🖼️ How It Works
 1. **Load Images:** Extract images from a specified directory.
@@ -54,14 +33,8 @@ ret, mask = cv2.threshold(gray, 0, 255, cv2.THRESH_BINARY_INV + cv2.THRESH_OTSU)
 - **Color Space Conversion:** Convert images to HSV for color analysis.
 - **Feature Extraction:** Compute mean hue, saturation, and value for both layers.
 - **Colorfulness Metric:** Use the metric:
-  
-  \[ C = \sqrt{rbStd^2 + ybStd^2} + 0.3 * \sqrt{rbMean^2 + ybMean^2} \]
+  <img width="526" alt="Screenshot 2025-02-14 at 10 15 16 PM" src="https://github.com/user-attachments/assets/f2c0f261-dd5a-49c4-8e04-4a3eaf0523b2" />
 
-## 📜 Example Output
-| Image  | Foreground Hue | Background Hue | Colorfulness |
-|--------|---------------|---------------|--------------|
-| Image1 | 83.02         | 72.45         | 134.33       |
-| Image2 | 102.49        | 43.01         | 158.21       |
 
 ## 📈 Visualization Examples
 - **Foreground and Background Separation:**
@@ -74,11 +47,6 @@ ret, mask = cv2.threshold(gray, 0, 255, cv2.THRESH_BINARY_INV + cv2.THRESH_OTSU)
 - **Colorfulness Score Comparisons (one example output)**
   - <img width="353" alt="Screenshot 2025-02-14 at 10 12 18 PM" src="https://github.com/user-attachments/assets/91d87182-013f-482c-a0f9-fbc72055518c" />
 
-## 🔍 Future Enhancements
-- **Apply Deep Learning** for better segmentation.
-- **Expand Dataset** for improved generalization.
-- **Develop a Web Interface** for interactive image processing.
-
 ---
-**Computer Vision Color Research** - A project analyzing image segmentation and color extraction using OpenCV. 🚀
+
 
